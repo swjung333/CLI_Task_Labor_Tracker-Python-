@@ -12,11 +12,11 @@ This project was developed as part of a university final assessment ('Python'), 
 ## Key Features
 Dynamic Task Lifecycle Management: Full CRUD (Create, Read, Update, Delete) functionality allowing users to add, search, rename, and remove tasks on the fly.
 
-Intelligent Labor Hour Calculation: * Accepts HH:MM 24-hour format inputs.
+Intelligent Labor Hour Calculation: *Accepts HH:MM 24-hour format inputs*.
 
 Midnight Rollover Logic: Automatically detects and adjusts calculations for shifts that cross over 12:00 AM (e.g., a task starting at 11:00 PM and ending at 1:00 AM is correctly calculated as 2 hours).
 
-Data Integrity & Validation: * Prevents duplicate task entries.
+Data Integrity & Validation: *Prevents duplicate task entries*.
 
 Strict error handling for invalid time ranges (00:00–23:59).
 
