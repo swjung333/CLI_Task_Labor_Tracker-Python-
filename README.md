@@ -64,6 +64,8 @@ Task marked as done. Duration: 2.75 hours
 ---
 
 ## Example Commands
+help -> display available commands and usage
+
 add -> create a task
 
 view -> list all tasks
