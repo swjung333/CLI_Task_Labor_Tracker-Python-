@@ -5,6 +5,8 @@ A Python Command-Line Interface (CLI) tool for managing tasks and tracking labor
 ## Project Overview
 This CLI Task Management System is a lightweight productivity tool designed for high-efficiency labor tracking. Built with Python, it allows users to manage complex task lifecycles while providing a robust engine for calculating precise work durations using 24-hour time logic.
 
+This project was developed as part of a university final assessment ('Python'), emphasizing practical software design, time computation logic, and CLI-based system architecture.
+
 ---
 
 ## Key Features
@@ -24,3 +26,59 @@ Productivity Analytics: A details reporting engine that aggregates completion ra
 
 ---
 
+## Technical Implementation 
+
+### Architecture
+The system uses a **parallel list structure** to manage task state:
+
+- `task_names` -> task identifiers  
+- `task_statuses` -> completion state (True/False)  
+- `task_durations` -> recorded work hours 
+
+This ensures synchronized state management across all operations.
+
+### Core Logic: Time Calculation
+
+The program is designed to avoid external libraries for the project and implements manual time computation instead:
+
+1. Convert input time into total minutes  
+2. Compute difference between start and end  
+3. Handle overnight tasks using 24-hour adjustment
+
+Formula used:
+TotalTime = (EndMinutes - StartMinutes + 1440) % 1440
+**This guarantees correct results even when tasks cross midnight.**
+
+Example:
+
+Enter command: add
+Enter a new task name: EDA #1
+Task added successfully.
+
+Enter command: done
+Enter a task name to complete: EDA #1
+Start time: 22:30
+End time: 01:15
+Task marked as done. Duration: 2.75 hours
+
+---
+
+## Example Commands
+add -> create a task
+view -> list all tasks
+edit -> rename a task
+remove -> delete a task
+search -> find a task
+done -> mark task complete + log time
+details -> show summary statistics
+exit -> quit program
+
+---
+
+## Skills Demonstrated
+
+- Python fundamentals (control flow, lists, loops)
+- Input validation and error handling
+- Algorithmic thinking (time normalization logic)
+- CLI application design
+- Data consistency management
