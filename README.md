@@ -53,6 +53,7 @@ Example:
 
 Enter command: add
 Enter a new task name: EDA #1
+
 Task added successfully.
 
 Enter command: done
