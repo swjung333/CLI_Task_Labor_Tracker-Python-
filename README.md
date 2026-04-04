@@ -65,12 +65,19 @@ Task marked as done. Duration: 2.75 hours
 
 ## Example Commands
 add -> create a task
+
 view -> list all tasks
+
 edit -> rename a task
+
 remove -> delete a task
+
 search -> find a task
+
 done -> mark task complete + log time
+
 details -> show summary statistics
+
 exit -> quit program
 
 ---
