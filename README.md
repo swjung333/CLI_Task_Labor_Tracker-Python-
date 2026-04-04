@@ -49,7 +49,8 @@ Formula used:
 TotalTime = (EndMinutes - StartMinutes + 1440) % 1440
 **This guarantees correct results even when tasks cross midnight.**
 
-Example:
+
+### Example:
 
 Enter command: add
 Enter a new task name: EDA #1
@@ -58,9 +59,14 @@ Task added successfully.
 
 Enter command: done
 Enter a task name to complete: EDA #1
+
 Start time: 22:30
+
 End time: 01:15
-Task marked as done. Duration: 2.75 hours
+
+Task marked as done.
+
+Duration: 2.75 hours
 
 ---
 
