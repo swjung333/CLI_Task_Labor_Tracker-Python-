@@ -53,11 +53,13 @@ TotalTime = (EndMinutes - StartMinutes + 1440) % 1440
 ### Example:
 
 Enter command: add
+
 Enter a new task name: EDA #1
 
 Task added successfully.
 
 Enter command: done
+
 Enter a task name to complete: EDA #1
 
 Start time: 22:30
@@ -67,6 +69,9 @@ End time: 01:15
 Task marked as done.
 
 Duration: 2.75 hours
+
+<img width="395" height="232" alt="Example" src="https://github.com/user-attachments/assets/5da719c5-b2be-4d01-a25a-642ce367589e" />
+
 
 ---
 
