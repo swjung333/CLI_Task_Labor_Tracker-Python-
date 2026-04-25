@@ -47,7 +47,9 @@ The program is designed to avoid external libraries for the project and implemen
 
 Formula used:
 if total_time > 0, total_time = end_total - start_total
+
 if total_time < 0, total_time = end_total - start_total + (24 * 60)
+
 **This guarantees correct results even when tasks cross midnight.**
 
 
