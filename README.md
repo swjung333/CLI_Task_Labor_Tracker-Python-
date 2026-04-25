@@ -46,6 +46,7 @@ The program is designed to avoid external libraries for the project and implemen
 3. Handle overnight tasks using 24-hour adjustment
 
 Formula used:
+
 if total_time > 0, total_time = end_total - start_total
 
 if total_time < 0, total_time = end_total - start_total + (24 * 60)
